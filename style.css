@@ -1,6 +1,67 @@
+body{
+/*	overflow-y: scroll;
+  overflow-x: hidden;*/
 
+}
 header{
 	overflow: hidden;
+}
+
+.login-index{
+	position: fixed;
+     left:0;
+     right:0;
+     top:0;
+     bottom:0;
+	z-index:10000;
+	height:auto;
+	width:auto;
+	background: white;
+	text-align: center;
+	width:30%;
+	height:300px;
+	margin:auto;
+	box-shadow: 1px 1px;
+	display: none;
+}
+
+.login-index p{
+	font-size: 12px
+}
+.facebook{margin:4px;
+	border: solid 1px black;
+	background-color: blue;
+}
+.google{
+	margin-top:20px;
+	margin:4px;
+	border: solid 1px black;
+}
+.email{
+	margin:4px;
+	border: solid 1px black;
+	background-color:red;
+}
+.policy a{ 
+	text-decoration: none;
+	color:red;
+}
+.link a{
+	margin-top:10px;
+	padding-bottom:10px;
+	font-size: 24px;
+	font-weight:700px;
+    padding:3px;
+    margin:12px;
+}
+
+.background-grey{
+	z-index:9000;
+	background-color:rgba(209, 208, 0, 0.2);
+	height: 100%;
+	width:100%;
+    position: absolute;
+    display: none;
 }
 .video-wrapper{
 	position: absolute;
@@ -36,7 +97,13 @@ header{
     overflow: hidden;*/
 		
          }
-
+.clear-cover{
+	background-color:rgba(209, 208, 0, 0.2);
+	z-index:5;
+	height: 100%;
+	width:100%;
+    position: absolute;
+}
 .back-ground-wraper{
 	width: 100%;
     position: relative;
@@ -46,6 +113,7 @@ header{
 	text-align: center;
 	position: relative;
 	z-index: 10;
+
 
 	
 }
@@ -85,11 +153,14 @@ header{
 
 }
 .date-select{
+   
+    bottom:30px;
 	width:70%;
 	margin:0 auto;
 	text-align:center;
-	background-color:rgb(30,144,255,0.6);
-	padding-top:20px;
+	background-color:rgba(30,144,255,0.6);
+	padding:20px;
+	z-index:10;
 }
 
 
@@ -131,11 +202,19 @@ width:260px;
     text-align: center;
     padding:3px;
 }
-
+.sssbutton:hover{
+	background-color:rgba(110,255,255, 0.3);
+}
 body{
 	background-color: #edefed;
 	margin:0;
 	padding:0;
+	position: relative;
+
+}
+.no-scroll{
+	height:100%;
+	overflow: hidden;
 }
 
 .text-front-page{
@@ -146,6 +225,7 @@ body{
 .text-front-page p{
 font-size: 34px;
 font-weight:700;
+padding-bottom:140px;
 }
 
 .image-content{
@@ -155,25 +235,25 @@ font-weight:700;
 	float:left;
 	/*display: inline;
 */	width:100%;
-	height:700px;
+	height:900px;
 	background-image: url('jason2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% 30%;
     background-size:cover;
     text-align: center;
-    transform: translateY(-70px) translateZ(2px) scale(1.2);
+    transform:  translateZ(2px) scale(1.1);
     z-index:-1;
      box-sizing: border-box;
       overflow: hidden;
-   
+
 }
 
 .right-half{
 float:left;
 	/*display: inline;*/
 	width:100%;
-	height:700px;
+	height:750px;
 	background-image: url('jason4.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -191,32 +271,32 @@ float:left;
 }
 .left-half-middle{
 	float:left;
-	/*display: inline;*/
+	display: block;
 	width:100%;
-	height:700px;
+	height:900px;
 	background-image: url('jason3.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% 30%;
     background-size:cover;
     text-align: center;
-    transform: translateY(-70px) translateZ(2px) scale(1.2);
+    transform: translateZ(2px) scale(1.1);
     z-index:-1;
-     box-sizing: border-box;
-      overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .left-half-bottom{
 	float:left;
-	/*display: inline;*/
+	display: block;
 	width:100%;
 	height:700px;
 	background-image: url('paris.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% 30%;
     background-size:cover;
     text-align: center;
-    transform: translateY(-70px) translateZ(2px) scale(1.2);
+    transform: translateZ(2px) scale(1.1);
   z-index:-1;
    box-sizing: border-box;
     overflow: hidden;
@@ -225,8 +305,8 @@ float:left;
 	float:left;
 	display: inline;
 	width:50%;
-	height:700px;
-	background-image: url('bridge1.jpg');
+	height:900px;
+	background-image: url('bridge2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -239,8 +319,8 @@ float:left;
 	float:left;
 	display: inline;
 	width:50%;
-	height:700px;
-	background-image: url('bridge2.jpg');
+	height:900px;
+	background-image: url('bridge1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -259,11 +339,11 @@ float:left;
 	margin:0 auto;
 	overflow: hidden;
 }*/
-.left-half h1 {
+.left-half  {
 padding-top:250px;
 	color:white;
 }
-.right-half h1 {
+.right-half{
 	padding-top:250px;
 	color:white;
 }
@@ -271,11 +351,11 @@ padding-top:250px;
 	padding-top:250px;
 	color:white;
 }
-.left-half-bottom h1 {
+.left-half-bottom {
 	padding-top:250px;
 	color:white;
 }
-.right-half-bottom h1{
+.right-half-bottom {
 	padding-top:250px;
 	color:white;
 }
@@ -288,7 +368,7 @@ padding-top:250px;
 	color:white;
 
 }
-/*.discover{
+.discover{
 	text-align: center;
 	margin:30px;
 }
@@ -296,7 +376,7 @@ padding-top:250px;
 	font-weight: 700;
 
 }
-*/
+
 .small-pic{
 	float:left;
 	display: inline;
@@ -308,7 +388,7 @@ padding-top:250px;
     background-position: center;
     background-size:cover;
     text-align: center;
-   overflow: hidden;
+    overflow: hidden;
     box-sizing: border-box;
 }
 .small-pic-wraper h1{
@@ -327,8 +407,67 @@ padding-top:250px;
     background-size:cover;
     text-align: center;
     overflow: hidden;
-     box-sizing: border-box;
+    box-sizing: border-box;
+    }
 
-        }
+
+/*become a guide css 代码 以下是另一页代码 */
+
+.guide-font-text{
+	color:black;
+	margin:0 auto;
+	text-align:center;
+
+}
+
+.contact-form{
+	text-align: center;
+	margin:0 auto;
+}
+input{
+	background-color: #edefed;
+    margin:20px;
+	border: none;
+	border-bottom: solid 1px black;;
+        width: 80%;
+    box-shadow: none;
+}
+
+.submit{
+	width:auto;
+	border:solid 1px black;
+	box-shadow:4px 3px 2px #888888;
+	transform: translateZ(2px);
+
+/*}
+.submit:hover{*/
+	text-decoration: none;
+	-webkit-animation-name: jason;
+	float:left;
+	-webkit-animation-duration: 1s;
+	}
+@-webkit-keyframes jason {
+    from {float: left;}
+    to {float: right;}
+    to {margin:0 auto;}    }
+
+textarea{
+	width:80%;
+	height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

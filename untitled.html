@@ -34,10 +34,35 @@
  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <!--  <link rel="stylesheet" type="text/css" href="stylesheet.css">
  -->   <link rel="stylesheet" type="text/css" href="style.css"/>
-
+<script type="text/javascript" src="javascript.js"></script>
 </head>
+
+  
+</section>
+
 <body>
 
+<section class="background-grey">
+  
+</section>
+<section class="login-index">
+
+ <div class="link">
+  <div class="google">
+   <a href="#">LOGIN WITH GOOGLE</a>
+  </div>
+  <div class="facebook">
+   <a href="#">LOGIN WITH FACEBOOK</a>
+  </div>
+  <div class="email">
+    <a href="#">LOGIN WITH EMAIL</a>
+  </div>
+  </div>
+
+  <div class="policy">
+  <p>By signing up, I agree to Airtour’s <a href="#">Terms of Service</a>, <a href="#">Payments Terms of Service</a>, <a href="#">Privacy Policy</a>, <a href="#">Guest Refund Policy</a>, and <a href="#">Host Guarantee Terms</a>. </p>
+  </div>
+</section> 
 
 
 <header>
@@ -49,39 +74,37 @@
                 <a class="sssbutton" href="#" target="_blank">
                   Become a Guide
                 </a>
-                <a class="sssbutton" href="#" target="_blank">
+                <a class="sssbutton login-button" href="#" >
                   LOGIN 
                 </a>  
                 <a  href="#" target="_blank">
                   HELP
                 </a>
               </div>
-                <section class="text-front-page">
+     <section class="text-front-page">
                     <p>DISCOVERY A NEW PLACE WITH A PRIVATE TOUR<br>
                     with your perference</p>
-                </section>
-              
-          </div>
 
-          <div class="first-img">
-            <img src="firstimg.jpg" alt="backgroundimg">
-          </div>
-          <div class="video-wrapper">
-            <video class="background" loop muted autoplay >
-             <source src="travel.mp4" type="video/mp4">
-            </video>
-          </div>
-      </section>
-                 
 
-        
-</header>
-<!--  <section class="date-select">          
+             <section class="date-select">          
           <label>Date</label> 
           <input type="text" id="datepicker">
           
           <label>Select a Destination</label>
-          <p>how many people travel: 
+          <select id="dropdown">
+                  <option value="1">Chicago</option>
+                  <option value="2">London</option>
+                  <option value="3">Shanghai</option>
+                  <option value="4">HongKong</option>
+                  <option value="5">Los angels </option>
+                  <option value="6">Boston</option>
+                  <option value="7">Toronta</option>
+                  <option value="8">New York</option>
+                  <option value="9">Vancouver</option>
+                  <option value="10">Seattle</option>
+                  <option value="11+">OThers</option>
+              </select>
+          <label>how many people travel: </label>
               <select id="dropdown">
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -95,13 +118,32 @@
                   <option value="10">10</option>
                   <option value="11+">11+</option>
               </select>
-          </p>
- </section>
+          
+        </section>
+      </section>
+              
+          </div>
+
+          <div class="first-img">
+            <img src="firstimg.jpg" alt="backgroundimg">
+          </div>
+          <div class="video-wrapper">
+          <div class="clear-cover"></div>
+            <video class="background" loop muted autoplay >
+             <source src="travel.mp4" type="video/mp4">
+            </video>
+          </div>
+     </section>
+                 
+
+        
+</header>
+<!-- 
 
 <div class="discover">
 <h1>DISCOVERY THE WORLD</h1>
-</div>
- -->
+</div> -->
+
 
 
 
