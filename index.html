@@ -33,7 +33,14 @@
  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <!--  <link rel="stylesheet" type="text/css" href="stylesheet.css">
- -->   <link rel="stylesheet" type="text/css" href="style.css"/>
+-->   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.inview/0.2/jquery.inview.min.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
 <script type="text/javascript" src="javascript.js"></script>
 </head>
 
@@ -49,18 +56,24 @@
 
  <div class="link">
   <div class="google">
-   <a href="#">LOGIN WITH GOOGLE</a>
+   <a href="#"><i class="fa fa-google" aria-hidden="true"></i>LOGIN WITH GOOGLE</a>
   </div>
   <div class="facebook">
-   <a href="#">LOGIN WITH FACEBOOK</a>
+   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+LOGIN WITH FACEBOOK</a>
   </div>
   <div class="email">
-    <a href="#">LOGIN WITH EMAIL</a>
+    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>LOGIN WITH EMAIL</a>
   </div>
   </div>
 
   <div class="policy">
   <p>By signing up, I agree to Airtour’s <a href="#">Terms of Service</a>, <a href="#">Payments Terms of Service</a>, <a href="#">Privacy Policy</a>, <a href="#">Guest Refund Policy</a>, and <a href="#">Host Guarantee Terms</a>. </p>
+  </div class="login-again">
+  <h2>Already a member? </h2>
+  <a class="ssbutton"href="#">LOGIN</a>
+  <div>
+  	
   </div>
 </section> 
 
@@ -68,10 +81,10 @@
 <header>
       <section class="back-ground-wraper">
 
-          <div class="font-text">
+          <div class="font-text"> <!-- font-text -->
                <h1 class="animated bounceInRight">AIRTOUR</h1>
               <div class="button-contain">
-                <a class="sssbutton" href="#" target="_blank">
+                <a class="sssbutton" href="file:///Users/doejo/Desktop/GA/airtour/becomeguide.html" target="_blank">
                   Become a Guide
                 </a>
                 <a class="sssbutton login-button" href="#" >
@@ -86,7 +99,8 @@
                     with your perference</p>
 
 
-             <section class="date-select">          
+         <section class="date-select">
+         <div class="full">          
           <label>Date</label> 
           <input type="text" id="datepicker">
           
@@ -117,12 +131,21 @@
                   <option value="9">9</option>
                   <option value="10">10</option>
                   <option value="11+">11+</option>
-              </select>
-          
+          </select>
+            </div>
+            <div class="phone">
+             <label>Where to?</label> 
+          <input type="text" >
+            </div>
         </section>
       </section>
               
-          </div>
+          </div> <!-- font-text -->
+
+
+
+
+
 
           <div class="first-img">
             <img src="firstimg.jpg" alt="backgroundimg">
@@ -145,8 +168,8 @@
 </div> -->
 
 
-
-
+<!-- 
+<div>this is great </div> -->
 <div class="image-content">
 
     <section class="half-half">
@@ -173,12 +196,12 @@
 <div class="image-content">
 
     <section class="half-half">
-        <div class="left-half-3">
+        <div class="left-half-3 animated">
             <h1> CHICAGO</h1>
             <p>An Afternoon Walk</p>
         </div>
 
-        <div class="right-half-3">
+        <div class="right-half-3 animated">
             <h1>LONDON</h1>
             <p>Fresh morning breath</p>
                 
@@ -190,8 +213,8 @@
 
     <section class="half-half">
         <div class="left-half-bottom">
-            <h1>Franch</h1>
-            <p>Franch Seine River Boat Tour</p>
+            <h1>French</h1>
+            <p>French Seine River Boat Tour</p>
         </div>
 
         <!-- <div class="right-half-bottom">
@@ -201,10 +224,10 @@
     </section>
 </div>
 <section class="small-pic-wraper">
-<div class="small-pic animated adeInLeftBig">
+<div class="small-pic animated">
 <h1>AIR</h1>
 </div>
-<div class="small-pic-1 animated fadeInRightBig">
+<div class="small-pic-1 animated">
 <h1>TOUR</h1>
 </div>
 

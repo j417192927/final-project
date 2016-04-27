@@ -6,7 +6,9 @@ body{
 header{
 	overflow: hidden;
 }
+#love{
 
+}
 .login-index{
 	position: fixed;
      left:0;
@@ -18,29 +20,42 @@ header{
 	width:auto;
 	background: white;
 	text-align: center;
-	width:30%;
+	width:350px;
 	height:300px;
 	margin:auto;
 	box-shadow: 1px 1px;
 	display: none;
+	border-radius:3px;
+	border:solid black 1px;
 }
 
 .login-index p{
 	font-size: 12px
 }
+.login-index a{
+	text-decoration: none;
+}
 .facebook{margin:4px;
 	border: solid 1px black;
-	background-color: blue;
+	background-color: #49649f;
+	border-radius:3px;
 }
 .google{
 	margin-top:20px;
-	margin:4px;
+	margin:11px;
 	border: solid 1px black;
+	border-radius:3px;
+	background-color: #ea4335;
+}
+.facebool:after{
+	height:11px;
+	border-bottom:solid black 1px;
 }
 .email{
-	margin:4px;
+	margin:11px;
 	border: solid 1px black;
 	background-color:red;
+	border-radius:3px;
 }
 .policy a{ 
 	text-decoration: none;
@@ -57,7 +72,7 @@ header{
 
 .background-grey{
 	z-index:9000;
-	background-color:rgba(209, 208, 0, 0.2);
+	background-color:rgba(0, 0, 0, 0.8);
 	height: 100%;
 	width:100%;
     position: absolute;
@@ -153,16 +168,33 @@ header{
 
 }
 .date-select{
-   
-    bottom:30px;
-	width:70%;
-	margin:0 auto;
+    position: absolute;
+    top:450px;
+	width:80%;
+	margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
 	text-align:center;
-	background-color:rgba(30,144,255,0.6);
+	background-color:rgba(0, 0, 0, 0.5);
 	padding:20px;
 	z-index:10;
+	margin-bottom:30px;
+}
+.phone{
+display: none;
+}
+@media screen and (max-width: 860px){
+.phone{
+display: block;
+}
+.full{
+	display: none;
 }
 
+
+
+}
 
 /*.background-wraper{
 height:682px;
@@ -195,15 +227,25 @@ width:260px;
 	margin-left:20px;
 
 }
-.sssbutton{margin-top:20px;
+.sssbutton{
+	margin-top:20px;
     border: solid white 2px;
     background-color:rgba(255,255,255, 0.3);
     color:white;
     text-align: center;
     padding:3px;
+    border-radius:5px;
 }
 .sssbutton:hover{
 	background-color:rgba(110,255,255, 0.3);
+}
+.ssbutton{
+    border: solid red 1px;
+    background-color:rgba(255,255,255, 0.3);
+    color:red;
+    text-align: center;
+    padding:3px;
+    border-radius:5px;
 }
 body{
 	background-color: #edefed;
